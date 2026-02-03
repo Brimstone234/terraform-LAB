@@ -1,3 +1,4 @@
+# ford was here
 
 # 1. Create the VPC
 resource "aws_vpc" "main" {
