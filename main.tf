@@ -24,7 +24,7 @@ resource "aws_subnet" "public_subnet" {
 # 3. Create EC2 Instance
 resource "aws_instance" "demo" {
   ami           = "ami-062aea897630d952b"
-  instance_type = "t3.small"
+  instance_type = "t3.micro"
 
   # This line connects your instance to the new infrastructure
   subnet_id = aws_subnet.public_subnet.id
