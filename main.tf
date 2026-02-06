@@ -1,14 +1,14 @@
 # ford was here
 
 # 1. Create the VPC
-resource "aws_vpc" "main" {
-  cidr_block = "10.0.0.0/16"
-  enable_dns_hostnames = true
-
-  tags = {
-    Name = "main-vpc"
-  }
-}
+# resource "aws_vpc" "main" {
+#   cidr_block = "10.0.0.0/16"
+#   enable_dns_hostnames = true
+#
+#   tags = {
+#     Name = "main-vpc"
+#   }
+# }
 
 # 2. Create a Subnet within the VPC
 resource "aws_subnet" "public_subnet" {
