@@ -30,6 +30,6 @@ resource "aws_instance" "demo" {
   subnet_id = aws_subnet.public_subnet.id
 
   tags = {
-    Name = "demo-ec2"
+    Name = "test from main"
   }
 }
