@@ -33,3 +33,16 @@ resource "aws_instance" "demo" {
     Name = "test from main"
   }
 }
+
+# 4. Create EC2 Instance
+resource "aws_instance" "demo-1" {
+  ami           = "ami-062aea897630d952b"
+  instance_type = "t3.small"
+
+  # This line connects your instance to the new infrastructure
+  subnet_id = aws_subnet.public_subnet.id
+
+  tags = {
+    Name = "test from main"
+  }
+}
